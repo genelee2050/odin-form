@@ -1,0 +1,127 @@
+@font-face {
+    font-family: norse;
+    src: url(assets/Norse-Bold.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.toproot {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.fluff {
+    width: 40%;
+    background-image: url(assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    height: auto;
+    top: 30%;
+    padding: 15px;
+
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+.logoimg {
+    height: 10vh;
+}
+
+.logotext {
+    color: white;
+    font-family: norse;
+}
+
+.content {
+    width: 60%;
+    padding: 5vw;
+    background-color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.title {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5vh;
+}
+
+.datatitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.formarea {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2.5vw;
+}
+
+.inputpair {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 20vw;
+    gap: 0.5vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inputpair label {
+    color: rgb(75, 75, 75);
+    height: 2vh;
+    font-size: small;
+    font-weight: 550;
+}
+
+.inputpair input {
+    border: 2px solid #E5E7EB;
+    height: 4vh;
+}
+
+.inputpair input:invalid {
+    border: 2px solid red;
+}
+
+.inputpair input:focus {
+    outline: none;
+    border: 2px solid rgb(23, 150, 255);
+    box-shadow: 1px 1px 5px rgb(15, 91, 152);
+}
+
+.submit button {
+    color: white;
+    background-color: #596D48;
+    width: 18vw;
+    height: 5vh;
+    margin: 2vh 0;
+
+    border-style: none;
+    border-radius: 10px;
+}
